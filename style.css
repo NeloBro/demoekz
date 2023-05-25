@@ -1,0 +1,279 @@
+body {
+	margin: 0px;
+	background-color: #172047;
+	color: white;
+	font-family: "Josefin Sans", sans-serif;
+}
+.container {
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-items: center;
+	gap: 20px;
+}
+.header {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	width: 80%;
+	background-color: #0A0E21;
+	border-radius: 0 0 25px 25px;
+	justify-items: center;
+	align-items: center;
+	font-size: 40px;
+}
+.header img {
+	width: 50%;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+a:hover {
+	color: white;
+}
+.poisk {
+	background-color: #E21347;
+	height: 25px;
+	padding: 10px;
+	border-radius: 100px;
+}
+.poisk input {
+	border-radius: 100px;
+	background-color: white;
+	border: 0px;
+	font-size: 20px;
+}
+form {
+	display: grid;
+	grid-template-columns: 9fr 1fr;
+	gap: 3px;
+}
+.list {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 10px;
+	justify-items: start;
+	align-items: start;
+	width: 80%;
+	overflow: hidden;
+}
+
+.container_slider_css{
+	width:500px;
+	height:300px;
+	overflow:hidden;
+	position:relative;
+	display: none;
+}
+.photo_slider_css{
+	position:absolute;
+	animation:round 12s infinite;
+	opacity:0;
+	width:100%;
+}
+@keyframes round {
+25%{opacity:1}
+40%{opacity:0}
+}
+img:nth-child(1){animation-delay:10s}
+img:nth-child(2){animation-delay:8s}
+img:nth-child(3){animation-delay:6s}
+img:nth-child(4){animation-delay:4s}
+img:nth-child(5){animation-delay:2s}
+img:nth-child(6){animation-delay:0}
+
+.img-1 {
+	width: 200px;
+}
+.game {
+	background-color: #0A0E21;
+	border: 2px solid #62D919;
+	border-radius: 25px;
+	padding: 30px;
+	margin-top: 30px;
+	font-size: 20px;
+}
+
+.game img {
+	margin: auto;
+	display: block;
+}
+
+.scrinsmotr {
+	font-family: "Roboto", sans-serif;
+	background-color: #E21347;
+	border-radius: 25px;
+	padding: 5px;
+	text-align: center;
+	font-size: 17px;
+}
+
+.scrinsmotr:hover ~ .container_slider_css{
+	display: block;
+}
+
+.scrinsmotr:hover ~ .img-1{
+	display: none;
+}
+
+.footer {
+	background-color: #0A0E21;
+	border-radius: 25px 25px 0 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 80%;
+	margin-top: 50px;
+	justify-items: center;
+	font-family: "Roboto", sans-serif;
+	align-items: center;
+}
+.footer a {
+	text-decoration: underline;
+	font-size: 25px;
+}
+.mainpage {
+	width: 50%;
+	grid-template-columns: 1fr;
+	display: grid;
+}
+.cover {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-items: center;
+}
+li {
+	margin-top: 30px;
+	color: #62D919;
+}
+li span {
+	color: white;
+}
+.scrin img {
+	width: 400px;
+	margin: 10px;
+}
+.scrin {
+	text-align: center;
+	background-color: #0A0E21;
+	border-radius: 25px;
+	padding: 25px;
+}
+.scrin input {
+	display: none;
+}
+
+#scrin1:checked + label img{
+	position: absolute;
+	width: 90%;
+	height: 90%;
+	left: 5%;
+}
+#scrin2:checked + label img{
+	position: absolute;
+	width: 90%;
+	height: 90%;
+	left: 5%;
+}
+#scrin3:checked + label img{
+	position: absolute;
+	width: 90%;
+	height: 90%;
+	left: 5%;
+}
+#scrin4:checked + label img{
+	position: absolute;
+	width: 90%;
+	height: 90%;
+	left: 5%;
+}
+#scrin5:checked + label img{
+	position: absolute;
+	width: 90%;
+	height: 90%;
+	left: 5%;
+}
+#scrin6:checked + label img{
+	position: absolute;
+	width: 90%;
+	height: 90%;
+	left: 5%;
+}
+
+.download {
+	justify-self: center;
+	background-color: #62D919;
+	text-align: center;
+	font-size: 40px;
+	margin: 20px;
+	border-radius: 40px;
+	padding: 15px;
+}
+.download img {
+	width: 50px;
+}
+.knopka {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-items: center;
+	width: 200px;
+}
+
+.cominput {
+	background-color: #0A0E21;
+	padding: 10px;
+	border: 2px solid #62D919;
+	border-radius: 25px;
+}
+
+.cominput input {
+	border-radius: 25px;
+	background-color: white;
+	border: 0;
+	font-size: 20px;
+	padding: 10px;
+}
+
+.comment {
+	background-color: #0A0E21;
+	margin-top: 20px;
+	padding: 10px;
+	border-radius: 25px;
+}
+
+.comment p {
+	font-family: "Roboto", sans-serif;
+}
+
+.inputs {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.inputs div {
+	background-color: #0A0E21;
+	margin: 20px;
+	font-size: 30px;
+	padding: 20px;
+	border-radius: 25px;
+	border: 2px solid #62D919;
+}
+
+.inputs input{
+	font-size: 30px;
+	border-radius: 25px;
+	background-color: white;
+	border: 0;
+	padding: 10px;
+}
+
+.loginlabel {
+	font-size: 35px;
+}
+
+.ssilka {
+	color: #B4B4B4;
+	text-decoration: underline;
+}
+
+.video {
+	padding: 20px;
+}
